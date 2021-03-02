@@ -4,7 +4,7 @@ Fine-tuning of bert-base-uncased on SQuAD dataset
 ## Platform
 Google Collab
 
-## Language
+## Programming Language
 Python
 
 ## Libraries
@@ -68,5 +68,3 @@ Suggested Runtime Type: GPU
 ## Author
 Vassilis Panagakis
 
-## Date
-February 2021
