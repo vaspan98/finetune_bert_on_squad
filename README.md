@@ -26,18 +26,33 @@ In order to achieve that we use a smaller part of the [SQuAD 2.0 dataset](https:
 
 **Question:** When were the Normans in Normandy? <br>
 
-```python
-# first squad answer for the question: When were the Normans in Normandy?
+<pre><code># first squad answer for the question: When were the Normans in Normandy?
 test_dataset[1]
+
 {'Id': '56ddde6b9a695914005b9629',
  '__index_level_0__': 4,
  'ans_start': 94,
   'context': 'The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in       France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.',
  'question': 'When were the Normans in Normandy?',
  'text': '10th and 11th centuries',
- 'title': 'Normans'}
- ```
+ 'title': 'Normans'}</code></pre>
 
+<pre><code># second squad answer for the question: When were the Normans in Normandy?
+test_dataset[2]
+
+{'Id': '56ddde6b9a695914005b9629',
+ '__index_level_0__': 5,
+ 'ans_start': 87,
+ 'context': 'The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and 11th centuries gave their name to Normandy, a region in France. They were descended from Norse ("Norman" comes from "Norseman") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agreed to swear fealty to King Charles III of West Francia. Through generations of assimilation and mixing with the native Frankish and Roman-Gaulish populations, their descendants would gradually merge with the Carolingian-based cultures of West Francia. The distinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to evolve over the succeeding centuries.',
+ 'question': 'When were the Normans in Normandy?',
+ 'text': 'in the 10th and 11th centuries',
+ 'title': 'Normans'}</code></pre>
+
+<pre><code># model's predicted answer for the question: When were the Normans in Normandy?
+predictions[1]
+
+{'id': '56ddde6b9a695914005b9629',
+ 'prediction_text': '10th and 11th centuries'}</code></pre>
 
 ## Metrics Score
 
