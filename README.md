@@ -27,6 +27,8 @@ In order to achieve that we use a smaller part of the [SQuAD 2.0 dataset](https:
 **Question:** When were the Normans in Normandy? <br>
 
 ```python
+# first squad answer for the question: When were the Normans in Normandy?
+test_dataset[1]
 {'Id': '56ddde6b9a695914005b9629',
  '__index_level_0__': 4,
  'ans_start': 94,
